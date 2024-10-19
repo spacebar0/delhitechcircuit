@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title img="img/logo.png">Dashboard | D.T.C</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fade-in">
+    <div class="container">
+
+        <!--sidebar-->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <a class="logo" style="font-family: 'Ubuntu', sans-serif; font-size:33.5px; padding-left:10px;"><img src='img/logo.png' style = "width: 47.5px; height: 45px;">D.T.C</a>
+                </div>
+                <div class="close">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="index.html" class="active">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="dnext.html">
+                    <span class="material-symbols-outlined">Event</span>
+                    <h3>Competitions</h3>
+                </a>
+                <a href="projects.html">
+                    <span class="material-symbols-outlined">Sdk</span>
+                    <h3>Resources</h3>
+                </a>
+                <a href="wartex.html">
+                    <span class="material-symbols-outlined">History</span>
+                    <h3>Previous Events</h3>
+                </a>
+                <a href="https://forms.gle/U2VyocybpNfmpEQW7">
+                    <span class="material-symbols-outlined">add</span>
+                    <h3>Create new project</h3>
+                </a>
+                <button id="logout" class="logout" onclick="location.href='landingpage.html'">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                </button>
+
+                
+            </div>
+        </aside>
+        <!--sidebar--> 
+
+        <!--main-->
+        <main>
+            <h1>Dashboard</h1>
+            <h3>Welecome Back!</h3>
+            <div class="insights">
+                <div class="progress">
+                    <span class="material-symbols-outlined">trending_up</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>My Progress</h3>
+                            <h1>55%</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="wins">
+                    <span class="material-symbols-outlined">social_leaderboard</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>My wins</h3>
+                            <h1>33/50</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="workshops">
+                    <span class="material-symbols-outlined">work</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>My workshops</h3>
+                            <h1>75%</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="main-course">
+                <h1>My courses</h1>
+                <div class="course-box">
+                  <ul>
+                    <li class="active">In progress</li>
+                  </ul>
+                  <div class="course">
+                    <div class="box">
+                      <h3>HTML</h3>
+                      <p>80% - progress</p>
+                      <button onclick="location.href='https://www.codecademy.com/learn/learn-html'">continue</button>
+                      <i class="fab fa-html5 html"></i>
+                    </div>
+                    <div class="box">
+                        <h3>CSS</h3>
+                        <p>50% - progress</p>
+                        <button onclick="location.href='https://www.codecademy.com/learn/learn-css'">continue</button>
+                        <i class="fab fa-css3-alt css"></i>
+                    </div>
+                    <div class="box">
+                        <h3>JavaScript</h3>
+                        <p>30% - progress</p>
+                        <button onclick="location.href='https://www.codecademy.com/learn/introduction-to-javascript'">continue</button>
+                        <i class="fab fa-js-square js"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                    
+        </main>
+        <!--main-->
+
+        <!--updates-->
+        <div class="right">
+            <div class="top">
+                <button id="menu">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+            <div class="featured-event">
+                <div class="event-header">
+                    <h2>Featured Event</h2>
+                </div>
+                <div class="event-body">
+                    <a href="https://youtu.be/0qz5QWLvupw" target="_blank">
+                        <div class="event-video">
+                            <img src="img/dnext-logo.png" width="100%" height="125px">
+                        </div>
+                    </a>
+                    <div class="event-info">
+                        <div class="event-title-date">
+                            <span class="event-title">Dn3xt</span>
+                            <span class="event-date">Starts 5th November</span>
+                        </div>
+                        <div class="participants">
+                            Participants: <span id="participant-count">400+</span>
+                        </div>
+                    </div>
+                    <div class="explore-button">
+                        <a href="dnext.html" class="explore-link">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="inbox">
+                <div class="inbox-header">
+                    <h2>Inbox</h2>
+                </div>
+                <div class="message-list">
+                    <!-- Welcome Message -->
+                    <div class="message-item">
+                        <div class="message-content">
+                            <span class="message-sender">D.C.T</span>
+                            <p class="message-text">Welcome to your dashboard! We're excited to have you here. Enjoy exploring the features.</p>
+                        </div>
+                    </div>
+                    <!-- Newsletter Message -->
+                    <div class="message-item">
+                        <div class="message-content">
+                            <span class="message-sender">D.C.T</span>
+                            <p class="message-text">Check out our latest <a href="newsletter.html" class="message-link">newsletter</a> for updates and exciting news!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--updates-->
+
+    </div>
+
+
+
+    <script> src="script.js"</script>
+</body>
+</html>

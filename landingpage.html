@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+    <head>
+        <title>D.T.C</title>
+
+        <link rel="stylesheet" type="text/css" href="lndinpge.css">
+         <script src="https://kit.fontawesome.com/d55e6178dd.js" crossorigin="anonymous"></script>
+
+        </head>
+        <body style="background: #292929;" class="fade-in">
+        <header>
+
+          <a class="logo" img href ="img/logo.png" style="color: #fff;font-family: 'Ubuntu', sans-serif; font-size:33.5px; padding-left:10px; font-weight:400; align-items: center;" >Delhi Tech Circuit</a>
+            <ul>
+                <li><a href='register.html'>Login</a></li>
+                <li><a href='contact.html'>Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="img/background.webp" id="mountains_behind">
+            <h2 id="text">D.T.C</h2> 
+            <a href="#footer" id="btn">Explore</a>
+        </section>
+        <div class="sec">
+            <h2>About Us</h2>
+            <p id='para'>
+
+
+              Delhi Tech Circuit (D.T.C) is a coalition of the most prominent and innovative high school tech clubs in Delhi. United by a shared passion for technology, D.T.C brings together the brightest young minds to collaborate and create extraordinary opportunities for students across the city. We specialize in hosting high-impact events, such as Dn3xt, which foster creativity, technical skill, and innovation in a competitive environment. Our mission is to empower the next generation of tech enthusiasts by providing platforms for learning, collaboration, and showcasing talent.</p>
+        </div>
+        <div class="dot-pulse">
+          
+        
+        </div>
+        <h2 id="upcoming">UPCOMING EVENTS</h2>
+        <section class="cards">
+          <div class="container">
+            <div class="card">
+              <div class="front">
+                <div class="content">
+                  <h3>ABOUT D-N3xt</h3>
+                </div>
+              </div>
+              <div class="back">
+                <div class="content">
+                  <p>
+                    Hosted by D.T.C, the Dn3xt event brings together the
+                    brightest tech minds from high schools across the city.
+                    This competition is designed to challenge and inspire
+                    the next generation of innovators, providing a unique
+                    platform to test your skills.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+                  <img id="dnext"src="img/dnext.png"/>
+          </div>
+          <div class="container">
+            <div class="card">
+              <div class="front">
+                <div class="content">
+                  <h3>EVENT LIST</h3>
+                </div>
+              </div>
+              <div class="back">
+                <div href="brochure.pdf" class="content">
+                  <p>
+                    Battle Royale: Fortnite Edition 
+                    Craftopia: The Minecraft Challenge 
+                    Soundwave Showdown 
+                    CodeCraft: The Programming Challenge 
+                    Hackathon Havoc 
+                    The Creative Challenge 
+                    The Cryptic Challenge 
+                    Pixel Perfect: Graphic Design Competition 
+                    Capture the Moment: Photography Contest 
+                    Reel Vision: Filmmaking Challenge 
+                    Discussion Xpress: The Group Challenge 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!-- Footer Start -->
+        <footer id="footer">
+          <div class="footer-top">
+              <div class="footer-container">
+                  <div class="row">
+                      <div class="col-md-12">
+                        
+                          <div class="social-links">
+                              <a href="https://dpsi.ac.in/dpsinternational/Default.asp" class="website"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                              <a href="https://www.facebook.com/profile.php?id=100068870022255" class="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                              <a href="https://www.instagram.com/dpsinternationalsaket/" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                              <a href="https://www.youtube.com/@dpsinternationalsaket4512" class="google-plus"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                              
+                          </div>
+                          <div class="copyright">
+                          Developed by Students of DPSI Saket. All Rights Reserved © 2024.
+                        </div>
+                      </div>
+                  </div>
+                </div>
+        </div> 
+        
+      </footer>
+      <!-- #footer end -->
+      
+        <script>
+          let mountains_behind = document.getElementById('mountains_behind');
+          let text = document.getElementById('text');
+          let btn = document.getElementById('btn');
+          let header = document.querySelector('header');
+
+          window.addEventListener('scroll', function(){
+              let value = window.scrollY;
+              mountains_behind.style.top = value * 0.5  + 'px';
+              text.style.marginRight = value * 3  + 'px';
+              text.style.marginTop = value * 0.78  + 'px';
+              btn.style.marginRight = value * 1.75  + 'px';
+              header.style.top = value * 0.5  + 'px';
+          })
+      </script> 
+
+    </body>
+</html>
