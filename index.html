@@ -54,9 +54,9 @@
               </div>
             </div>
           </div>
-          <div class="container">
-                  <img id="dnext"src="img/dnext.png"/>
-          </div>
+          <div class="container" onclick="redirectToPage()">
+            <img id="dnext" src="img/dnext.png" />
+           </div>
           <div class="container">
             <div class="card">
               <div class="front">
@@ -126,6 +126,10 @@
               btn.style.marginRight = value * 1.75  + 'px';
               header.style.top = value * 0.5  + 'px';
           })
+
+          function redirectToPage() {
+            window.location.href = "dnext.html";
+          }
       </script> 
 
     </body>
